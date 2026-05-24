@@ -1,0 +1,452 @@
+/* CSS cho trang web du lịch Gia Lai */
+
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background-color: #5ebcd3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #2f74db;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .menu a {
+    color: white;
+    font-size: 14px;
+}
+
+.navbar .menu a:hover {
+    color: #0b3dc7;
+}
+
+.navbar .menu a.active {
+    color: #025bce;
+    font-weight: bold;
+}
+
+/* Thanh tìm kiếm */
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 13px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #20b2d6;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-bar button:hover {
+    background-color: #1368d8;
+}
+
+/* Phần user (đăng nhập / hồ sơ) */
+.nav-user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-user a {
+    color: white;
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.nav-user a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.nav-user a.btn-register {
+    background-color: #90e0b0;
+    color: #1a6b4a;
+    border-color: #90e0b0;
+    font-weight: bold;
+}
+
+/* Dropdown user khi đã đăng nhập */
+/* .user-info {
+    position: relative;
+}
+
+.user-info button {
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.user-info button:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 140px;
+    overflow: hidden;
+}
+
+.user-dropdown a {
+    display: block;
+    padding: 10px 16px;
+    font-size: 13px;
+    color: #333;
+}
+
+.user-dropdown a:hover {
+    background-color: #f0f0f0;
+    color: #1a6b4a;
+}
+
+.user-info:hover .user-dropdown {
+    display: block;
+} */
+
+/* ========== HERO SECTION ========== */
+.hero {
+    margin-top: 55px;
+    height: 90vh;
+    background-image: url('../image/p2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Lớp tối phủ lên ảnh */
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.hero-text h1 {
+    font-family: 'Pinyon Script', 'Great Vibes', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.hero-text h2 {
+    font-family: 'Pinyon Script', 'Great Vibes', cursive;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    color: #90e0b0;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: rgba(255,255,255,0.85);
+}
+
+.hero-text .btn-hero {
+    background-color: #1a6b4a;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.hero-text .btn-hero:hover {
+    background-color: #145538;
+}
+
+.hero-text .btn-hero-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.hero-text .btn-hero-outline:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* ========== THÔNG TIN THỐNG KÊ ========== */
+.stats {
+    background-color: #2697c4;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.stats .stat-item {
+    text-align: center;
+    color: white;
+}
+
+.stats .stat-item .num {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+}
+
+.stats .stat-item .label {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+/* ========== SECTION CHUNG ========== */
+.section {
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1a6b4a;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.section-title span {
+    font-style: italic;
+    color: #2a9d6a;
+}
+
+.section-desc {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background-color: #1a1a1a;
+    color: rgba(255,255,255,0.7);
+    padding: 40px 30px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+}
+
+.footer .brand-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.footer h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer ul li {
+    margin-bottom: 7px;
+}
+
+.footer ul li a {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+}
+
+.footer ul li a:hover {
+    color: #90e0b0;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ========== THÔNG BÁO TOAST ========== */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1a6b4a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.toast.show {
+    display: block;
+}
+
+.toast.error {
+    background-color: #e74c3c;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .stats {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events-grid .ev-featured {
+        grid-column: span 1;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.msg-top {
+    position: fixed;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a6b4a;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    animation: fadeOut 3.5s forwards;
+}
+
+@keyframes fadeOut {
+    0%,70% { opacity: 1; }
+    100%    { opacity: 0; visibility: hidden; }
+}
+/* Tên người dùng trên navbar */
+.user-name {
+    color: white;
+    font-size: 13px;
+}
+
+/* Nút đăng xuất */
+.btn-logout {
+    color: white;
+    font-size: 13px;
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.btn-logout:hover {
+    background-color: rgba(255,255,255,0.2);
+}
