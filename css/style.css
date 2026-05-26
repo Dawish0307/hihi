@@ -29,11 +29,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 999; 
     padding: 12px 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .navbar .logo {
@@ -45,7 +45,9 @@ body {
 .navbar .logo span {
     color: #2f74db;
 }
-
+.navbar .logo .b {
+    color: #ffffff;
+}
 .navbar .menu {
     display: flex;
     gap: 25px;
@@ -108,71 +110,11 @@ body {
     border-radius: 20px;
 }
 
-.nav-user a:hover {
-    background-color: rgba(255,255,255,0.2);
-}
-
-.nav-user a.btn-register {
-    background-color: #90e0b0;
-    color: #1a6b4a;
-    border-color: #90e0b0;
-    font-weight: bold;
-}
-
-/* Dropdown user khi đã đăng nhập */
-/* .user-info {
-    position: relative;
-}
-
-.user-info button {
-    background-color: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.4);
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 13px;
-    font-family: inherit;
-}
-
-.user-info button:hover {
-    background-color: rgba(255,255,255,0.25);
-}
-
-.user-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 40px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    min-width: 140px;
-    overflow: hidden;
-}
-
-.user-dropdown a {
-    display: block;
-    padding: 10px 16px;
-    font-size: 13px;
-    color: #333;
-}
-
-.user-dropdown a:hover {
-    background-color: #f0f0f0;
-    color: #1a6b4a;
-}
-
-.user-info:hover .user-dropdown {
-    display: block;
-} */
-
-/* ========== HERO SECTION ========== */
-.hero {
+/* ========== t1 SECTION ========== */
+.t1 {
     margin-top: 55px;
     height: 90vh;
-    background-image: url('../image/p2.png');
+    background-image: url('../image/p1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -182,43 +124,38 @@ body {
     position: relative;
 }
 
-/* Lớp tối phủ lên ảnh */
-.hero-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.45);
-}
-
-.hero-text {
+.t1-text {
     position: relative;
     z-index: 1;
     color: white;
 }
-
-.hero-text h1 {
+.t1-text .bx {
+    color: #148dd3;
+}
+.t1-text h1 {
     font-family: 'Pinyon Script', 'Great Vibes', cursive;
     font-size: 90px;
     font-weight: 400;
     margin-bottom: 5px;
 }
 
-.hero-text h2 {
+.t1-text h2 {
     font-family: 'Pinyon Script', 'Great Vibes', cursive;
     font-size: 40px;
     font-style: italic;
     font-weight: 300;
     color: #90e0b0;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
-.hero-text p {
+.t1-text p {
     font-size: 16px;
     margin-bottom: 30px;
     color: rgba(255,255,255,0.85);
 }
 
-.hero-text .btn-hero {
-    background-color: #1a6b4a;
+.t1-text .btn-t1 {
+    background-color: #1072f1;
     color: white;
     padding: 12px 30px;
     border-radius: 25px;
@@ -227,11 +164,11 @@ body {
     display: inline-block;
 }
 
-.hero-text .btn-hero:hover {
-    background-color: #145538;
+.t1-text .btn-t1:hover {
+    background-color: #1020af;
 }
 
-.hero-text .btn-hero-outline {
+.t1-text .btn-t1-outline {
     border: 2px solid white;
     color: white;
     padding: 12px 30px;
@@ -241,12 +178,12 @@ body {
     display: inline-block;
 }
 
-.hero-text .btn-hero-outline:hover {
-    background-color: rgba(255,255,255,0.15);
+.t1-text .btn-t1-outline:hover {
+    color: #1072f1;
+    background-color: white;
 }
 
-/* ========== THÔNG TIN THỐNG KÊ ========== */
-.stats {
+.sl {
     background-color: #2697c4;
     padding: 20px 30px;
     display: flex;
@@ -254,48 +191,21 @@ body {
     gap: 60px;
 }
 
-.stats .stat-item {
+.sl .sl-1 {
     text-align: center;
     color: white;
 }
 
-.stats .stat-item .num {
+.sl .sl-1 .num {
     font-size: 28px;
     font-weight: bold;
     color: #ffffff;
     display: block;
 }
 
-.stats .stat-item .label {
+.sl .sl-1 .label {
     font-size: 12px;
     opacity: 0.85;
-}
-
-/* ========== SECTION CHUNG ========== */
-.section {
-    padding: 60px 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #1a6b4a;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.section-title span {
-    font-style: italic;
-    color: #2a9d6a;
-}
-
-.section-desc {
-    text-align: center;
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 35px;
 }
 
 /* ========== FOOTER ========== */
@@ -306,7 +216,7 @@ body {
 }
 
 .footer-grid {
-    display: grid;
+    display: grid; 
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 30px;
     max-width: 1100px;
@@ -337,13 +247,13 @@ body {
     margin-bottom: 7px;
 }
 
-.footer ul li a {
+.footer ul li a { 
     font-size: 13px;
     color: rgba(255,255,255,0.6);
 }
 
 .footer ul li a:hover {
-    color: #90e0b0;
+    color: #0f93df;
 }
 
 .footer-bottom {
@@ -355,31 +265,9 @@ body {
     margin: 0 auto;
 }
 
-/* ========== THÔNG BÁO TOAST ========== */
-.toast {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #1a6b4a;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    display: none;
-    z-index: 9999;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
 
-.toast.show {
-    display: block;
-}
-
-.toast.error {
-    background-color: #e74c3c;
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 768px) {
+/* ========== giao diện khi thu nhỏ ========== */
+/* @media (max-width: 768px) {
     .navbar .menu {
         display: none;
     }
@@ -388,15 +276,15 @@ body {
         display: none;
     }
 
-    .hero-text h1 {
+    .t1-text h1 {
         font-size: 55px;
     }
 
-    .hero-text h2 {
+    .t1-text h2 {
         font-size: 26px;
     }
 
-    .stats {
+    .sl {
         gap: 25px;
         flex-wrap: wrap;
     }
@@ -412,7 +300,7 @@ body {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-}
+} */
 .msg-top {
     position: fixed;
     top: 65px;
@@ -432,13 +320,13 @@ body {
     0%,70% { opacity: 1; }
     100%    { opacity: 0; visibility: hidden; }
 }
-/* Tên người dùng trên navbar */
+/* tên người dùng trên navbar */
 .user-name {
     color: white;
     font-size: 13px;
 }
 
-/* Nút đăng xuất */
+/* nút đăng xuất */
 .btn-logout {
     color: white;
     font-size: 13px;
@@ -448,5 +336,7 @@ body {
 }
 
 .btn-logout:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: #5385c5;
+    color: white;
+
 }

@@ -3,11 +3,8 @@ session_start();
 $isLoggedIn = isset($_SESSION['user_id']);
 $userName = $_SESSION['user_name'] ?? '';
 ?>
-<!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Du Lịch Gia Lai</title>
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -19,13 +16,15 @@ $userName = $_SESSION['user_name'] ?? '';
 <?php endif; ?>
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="logo">⛰ GIA LAI <span>TOURISM</span></div>
+    <a href="index.php">
+        <div class="logo">GIA LAI <span>TOURISM</span> <span class ="b">NÈ</span></div>
+    </a>
 
     <ul class="menu">
         <li><a href="index.php" class="active">Trang Chủ</a></li>
         <li><a href="map.php">Bản Đồ</a></li>
         <li><a href="about.php">Giới Thiệu</a></li>
-        <li><a href="destinations.php">Điểm Đến</a></li>
+        <li><a href="dt/destinations.php">Điểm Đến</a></li>
         <li><a href="contact.php">Liên Hệ</a></li>
     </ul>
 
@@ -37,12 +36,11 @@ $userName = $_SESSION['user_name'] ?? '';
 
     <!-- User -->
     <div class="nav-user">
+
         <?php if ($isLoggedIn): ?>
-            <div class="user-info">
-                <div class="nav-user">
+            <div class="nav-user">
                     <span class="user-name">👤 <?= htmlspecialchars($userName) ?></span>
                     <a href="api/auth.php?action=logout" class="btn-logout">Đăng Xuất</a>
-                </div>
             </div>
         <?php else: ?>
             <a href="login.php">Đăng Nhập</a>
@@ -51,29 +49,27 @@ $userName = $_SESSION['user_name'] ?? '';
     </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-text">
+<section class="t1">
+    <div class="t1-text">
         <h1>Đại Ngàn</h1>
-        <h2>chạm Biển Xanh</h2>
-        <p>Hành trình từ đại ngàn Tây Nguyên đến biển xanh Quy Nhơn</p>
-        <a href="destinations.php" class="btn-hero">Khám Phá Ngay</a>
-        <a href="about.php" class="btn-hero-outline">Tìm Hiểu Thêm</a>
+        <h2>chạm</h2>
+        <h1 class ="bx">Biển Xanh</h1> 
+        <a href="dt/destinations.php" class="btn-t1">Khám Phá Ngay</a>
+        <a href="about.php" class="btn-t1-outline">Tìm Hiểu Thêm</a>
     </div>
 </section>
 
 <!-- THỐNG KÊ -->
-<div class="stats">
-    <div class="stat-item">
+<div class="sl">
+    <div class="sl-1">
         <span class="num">Số liệu</span>
         <span class="label">Lượt Khách 2025</span>
     </div>
-    <div class="stat-item">
+    <div class="sl-1">
         <span class="num">Top</span>
         <span class="label">Điểm Đến Thế Giới</span>
     </div>
-    <div class="stat-item">
+    <div class="sl-1">
         <span class="num">2</span>
         <span class="label">Sân Bay</span>
     </div>
@@ -116,7 +112,7 @@ $userName = $_SESSION['user_name'] ?? '';
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2026 Gia Lai Tourism — Sở Du Lịch tỉnh Gia Lai</p>
+        <p>2026 Gia Lai Tourism — Sở Du Lịch tỉnh Gia Lai</p>
     </div>
 </footer>
 
