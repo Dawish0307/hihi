@@ -1,0 +1,109 @@
+/* CSS trang đăng nhập / đăng ký */
+
+.auth-page {
+    margin-top: 55px;
+    min-height: calc(100vh - 55px);
+    background-color: #f0f4f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.auth-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    font-size: 24px;
+    color: #1a6b4a;
+    margin-bottom: 5px;
+}
+
+.auth-sub {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #1a6b4a;
+    box-shadow: 0 0 0 2px rgba(26,107,74,0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a6b4a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #145538;
+}
+
+.auth-link {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 18px;
+}
+
+.auth-link a {
+    color: #1a6b4a;
+    font-weight: bold;
+}
+
+/* Thông báo lỗi / thành công */
+.msg-box {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.msg-box.success {
+    background-color: #e8f5ee;
+    color: #1a6b4a;
+    border: 1px solid #b2d8c0;
+}
+
+.msg-box.error {
+    background-color: #fde8e8;
+    color: #c0392b;
+    border: 1px solid #f5c6c6;
+}

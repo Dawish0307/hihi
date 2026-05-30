@@ -1,0 +1,346 @@
+/* CSS trang giới thiệu */
+
+/* Ảnh bìa */
+.about-cover {
+    margin-top: 55px;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-cover-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.about-cover-text h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.about-cover-text h2 {
+    font-family: 'Pinyon Script', 'Great Vibes', cursive;
+    font-size: 55px;
+    font-weight: 400;
+    color: #90e0b0;
+}
+
+/* Container chung */
+.ab-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section chung */
+.ab-section {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.ab-title {
+    font-size: 24px;
+    color: #1a6b4a;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.ab-desc {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+/* 2 cột */
+.ab-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.ab-two-col p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.ab-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Thống kê */
+.ab-stats {
+    background-color: #1a6b4a;
+    padding: 28px 20px;
+}
+
+.ab-stats-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.ab-stat {
+    color: white;
+}
+
+.ab-stat-num {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #90e0b0;
+    margin-bottom: 4px;
+}
+
+.ab-stat-label {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+/* Timeline */
+.ab-timeline {
+    margin-top: 28px;
+    padding-left: 16px;
+    border-left: 3px solid #1a6b4a;
+}
+
+.ab-tl-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 26px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.ab-tl-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #1a6b4a;
+    border-radius: 50%;
+    position: absolute;
+    left: -22px;
+    top: 4px;
+    flex-shrink: 0;
+}
+
+.ab-tl-highlight .ab-tl-dot {
+    background-color: #2a9d6a;
+    width: 14px;
+    height: 14px;
+    left: -23px;
+}
+
+.ab-tl-gold .ab-tl-dot {
+    background-color: #f0a500;
+    width: 14px;
+    height: 14px;
+    left: -23px;
+}
+
+.ab-tl-year {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1a6b4a;
+    min-width: 90px;
+    padding-top: 2px;
+}
+
+.ab-tl-highlight .ab-tl-year { color: #2a9d6a; }
+.ab-tl-gold .ab-tl-year      { color: #f0a500; }
+
+.ab-tl-content h3 {
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.ab-tl-content p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Cards văn hóa */
+.ab-card-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.ab-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.ab-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.ab-card-body {
+    padding: 12px;
+}
+
+.ab-tag {
+    display: inline-block;
+    background-color: #e8f5ee;
+    color: #1a6b4a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+.ab-card-body h3 {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.ab-card-body p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Bảng ẩm thực */
+.ab-food-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.ab-food-table th {
+    background-color: #1a6b4a;
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.ab-food-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.ab-food-table tr:hover td {
+    background-color: #f5fbf7;
+}
+
+/* Bảng thời tiết */
+.ab-weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.ab-weather-table th {
+    background-color: #1a6b4a;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.ab-weather-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.ab-weather-table tr:hover td {
+    background-color: #f5fbf7;
+}
+
+/* CTA */
+.ab-cta {
+    background-color: #0d2a3a;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.ab-cta h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.ab-cta p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 22px;
+}
+
+.ab-btn {
+    display: inline-block;
+    background-color: #1a6b4a;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 6px;
+    text-decoration: none;
+}
+
+.ab-btn:hover {
+    background-color: #145538;
+}
+
+.ab-btn-outline {
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 0 6px;
+    text-decoration: none;
+}
+
+.ab-btn-outline:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-cover-text h2 { font-size: 36px; }
+    .ab-two-col           { grid-template-columns: 1fr; }
+    .ab-card-row          { grid-template-columns: 1fr 1fr; }
+    .ab-stats-row         { gap: 16px; }
+}
+
+@media (max-width: 480px) {
+    .ab-card-row { grid-template-columns: 1fr; }
+}

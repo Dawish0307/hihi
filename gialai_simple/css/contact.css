@@ -1,0 +1,235 @@
+/* CSS trang liên hệ */
+
+/* Tiêu đề trang */
+.contact-header {
+    margin-top: 55px;
+    background-color: #0bb8cf;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-header p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Container chính */
+.contact-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Thông tin liên hệ */
+.contact-info {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    color: #1a6b4a;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.info-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.info-item p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+/* Mạng xã hội */
+.social-links {
+    margin-top: 10px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.social-links p {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-row {
+    display: flex;
+    gap: 8px;
+}
+
+.social-row a {
+    font-size: 12px;
+    padding: 5px 12px;
+    border: 1px solid #1a6b4a;
+    border-radius: 20px;
+    color: #1a6b4a;
+    font-weight: bold;
+}
+
+.social-row a:hover {
+    background-color: #1a6b4a;
+    color: white;
+}
+
+/* Form liên hệ */
+.contact-form-wrap {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form-wrap h2 {
+    font-size: 18px;
+    color: #1a6b4a;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form hàng 2 cột */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    color: #333;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1a6b4a;
+    box-shadow: 0 0 0 2px rgba(26, 107, 74, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    padding: 12px 30px;
+    background-color: #1a6b4a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-submit:hover {
+    background-color: #145538;
+}
+
+/* Thông báo */
+.msg-box {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.msg-box.success {
+    background-color: #e8f5ee;
+    color: #1a6b4a;
+    border: 1px solid #b2d8c0;
+}
+
+.msg-box.error {
+    background-color: #fde8e8;
+    color: #c0392b;
+    border: 1px solid #f5c6c6;
+}
+
+/* Bản đồ */
+.map-wrap {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-wrap iframe {
+    border-radius: 10px;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

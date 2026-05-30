@@ -1,0 +1,192 @@
+/* CSS trang điểm đến */
+
+/* Tiêu đề trang */
+.dest-header {
+    margin-top: 55px;
+    background-color: #0bb8cf;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.dest-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.dest-header p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+}
+
+/* Bộ lọc */
+.dest-filter-wrap {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    padding: 14px 20px;
+    position: sticky;
+    top: 55px;
+    z-index: 100;
+}
+
+.dest-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dest-filter {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.filter-btn {
+    padding: 7px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #555;
+    background-color: white;
+    text-decoration: none;
+}
+
+.filter-btn:hover {
+    border-color: #1a6b4a;
+    color: #1a6b4a;
+}
+
+.filter-btn.active {
+    background-color: #1a6b4a;
+    border-color: #1a6b4a;
+    color: white;
+    font-weight: bold;
+}
+
+.dest-count {
+    font-size: 13px;
+    color: #888;
+}
+
+/* Grid địa điểm */
+.dest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Card địa điểm */
+.dest-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.dest-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transform: translateY(-3px);
+    transition: all 0.3s;
+}
+
+.dest-card-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.dest-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dest-card:hover .dest-card-img img {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+/* Badge loại địa điểm */
+.dest-region-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255,255,255,0.9);
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #333;
+}
+
+/* Badge đánh giá */
+.dest-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.55);
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* Nội dung card */
+.dest-card-body {
+    padding: 16px;
+}
+
+.dest-card-body h3 {
+    font-size: 17px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dest-location {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.dest-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    /* Giới hạn 2 dòng */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.dest-btn {
+    display: inline-block;
+    background-color: #1a6b4a;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dest-btn:hover {
+    background-color: #145538;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .dest-grid {
+        grid-template-columns: 1fr;
+    }
+}

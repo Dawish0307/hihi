@@ -1,0 +1,250 @@
+/* CSS trang chi tiết địa điểm */
+
+/* Hero ảnh */
+.detail-hero {
+    margin-top: 55px;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.detail-hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+}
+
+.detail-region {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.detail-hero-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.detail-hero-text p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* Container */
+.detail-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #1a6b4a;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Layout 2 cột */
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Box trắng chung */
+.detail-box {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.detail-box h2 {
+    font-size: 18px;
+    color: #1a6b4a;
+    font-weight: bold;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-box p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Bảng thông tin */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.info-table tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-table tr:last-child {
+    border-bottom: none;
+}
+
+.info-table td {
+    padding: 10px 8px;
+    color: #555;
+}
+
+.info-table td:first-child {
+    font-weight: bold;
+    color: #333;
+    width: 130px;
+}
+
+/* Form đánh giá */
+.review-stars {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+.review-stars label {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.review-stars input[type="radio"] {
+    display: none;
+}
+
+/* Danh sách đánh giá */
+.review-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.review-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #fafafa;
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.review-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-stars-display {
+    font-size: 14px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: auto;
+}
+
+.review-comment {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Địa điểm liên quan */
+.related-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.related-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.related-item:hover {
+    background-color: #f5f5f5;
+}
+
+.related-item img {
+    width: 65px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.related-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.related-item strong {
+    font-size: 13px;
+    color: #222;
+}
+
+.related-item span {
+    font-size: 11px;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-hero-text h1 {
+        font-size: 24px;
+    }
+}
